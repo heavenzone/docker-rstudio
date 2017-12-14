@@ -1,7 +1,6 @@
 version: '2'
 services:
   rstudio:
-    build: .
     image: rocker/rstudio:latest
     ports:
       - 8787:8787
