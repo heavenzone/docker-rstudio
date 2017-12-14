@@ -1,0 +1,12 @@
+version: '2'
+services:
+  rstudio:
+    build: .
+    image: rocker/rstudio:latest
+    ports:
+      - 8787:8787
+    volumes:
+      - /home/shuosc/docker-rstudio:/home/shuosc
+    environment:
+      - USER=shuosc
+      - PASSWORD=shuosc
